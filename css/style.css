@@ -1,0 +1,685 @@
+body {
+overflow-y: visible;
+overflow-x: visible;
+cursor: auto;
+}
+
+.background {
+  width: 2880px;
+  height: 3000px;
+}
+
+#depthmeter {
+  position: fixed;
+  top: 100px;
+  left: 1330px;
+  width: 8%;
+  height: 50px;
+  background-color: transparent;
+  opacity: 0;
+}
+
+#anchor {
+  position: fixed;
+  width: 3%;
+  left: 1350px;
+  top: 50px;
+  opacity: 0;
+}
+
+#rope {
+  position: fixed;
+  width: 2px;
+  height: 60px;
+  background-color: black;
+  top: 0px;
+  left: 1371px;
+  opacity: 0;
+}
+
+.left {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.right {
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#bee {transition: transform .1s;
+    position: absolute;
+    width: 89px;
+    height: 89px;
+    top: 340px;
+    left: 1700px;
+    opacity: 0;
+}
+
+#sun {
+  position: absolute;
+  top: -165px;
+  left: 87.5%;
+  width: 25%;
+  opacity: 1;
+}
+
+#birds {
+  position: absolute;
+  top:0%;
+  left: 125%;
+  width: 30%;
+}
+
+#seaweed1 {
+  position: absolute;
+  top: 2882px;
+  left: 2500px;
+  width: 10%;
+}
+
+#seaweed2 {
+  position: absolute;
+  top: 2890px;
+  left: 2700px;
+  width: 10%;
+}
+
+#seaweed3 {
+  position: absolute;
+  top: 2880px;
+  left: 2430px;
+  width: 10%;
+}
+
+#seaweed4 {
+  position: absolute;
+  top: 2798px;
+  left: 2000px;
+  width: 10%;
+}
+
+#seaweed5 {
+  position: absolute;
+  top: 2788px;
+  left: 1700px;
+  width: 10%;
+}
+
+#subwaycar {
+  position: absolute;
+  width: 30%;
+  top: 2620px;
+  left: 2000px;
+  transform: rotate(-10deg);
+}
+
+#treasurechest {
+  position: absolute;
+  width: 15%;
+  top: 2750px;
+  left: 2200px;
+}
+
+#square {
+  position: absolute;
+  width: 15%;
+  height: 30%;
+  top: 2750px;
+  left: 2200px;
+  background-color: white;
+}
+
+#underwater {
+  width: 1445px;
+  height: 2600px;
+  position: absolute;
+  top: 400px;
+  left: 1435px;
+  /* background-color: lightblue; */
+  background-image: linear-gradient(#57E9FF, #000);
+  opacity: .5;
+}
+
+#bag {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 380px;
+  left: 400px;
+}
+
+#fish1 {
+  position: absolute;
+  width: 10%;
+  top: 800px;
+  left: 1280px;
+  opacity: 0;
+}
+
+#fishthoughtbubble {
+  position: absolute;
+  width: 12%;
+  top: 700px;
+  left: 1950px;
+  opacity: 0;
+}
+
+#floatingbag {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  top: 340px;
+  left: 1700px;
+  opacity: 0;
+}
+
+/* Animations */
+
+#seagull {
+  position: absolute;
+  width: 15%;
+  top: 250px;
+  left: 160%;
+}
+
+#birdthoughtbubble {
+  position: absolute;
+  width: 15%;
+  top: 140px;
+  left: 172%;
+  opacity: 0;
+}
+
+#trashpile1 {
+  position: absolute;
+  top: 2700px;
+  left: 1550px;
+  width: 18%;
+  opacity: .8;
+}
+
+#trashpile2 {
+  position: absolute;
+  top: 2700px;
+  left: 1700px;
+  width: 13%;
+  opacity: .5;
+}
+
+#trashpile3 {
+  position: absolute;
+  width: 10%;
+  left: 1670px;
+  top: 2680px;
+  opacity: .2;
+}
+
+#trashpile4 {
+  position: absolute;
+  top: 2690px;
+  left: 1790px;
+  width: 16%;
+  opacity: .8;
+}
+
+#trashpile5 {
+  position: absolute;
+  top: 2725px;
+  left: 1945px;
+  width: 12%;
+  opacity: .5;
+  transform: rotate(-5deg);
+}
+
+#trashpile6 {
+  position: absolute;
+  top: 2695px;
+  left: 2200px;
+  width: 12%;
+  opacity: .2;
+}
+
+#trashpile7 {
+  position: absolute;
+  top: 2672px;
+  left: 2300px;
+  width: 15%;
+  opacity: .5;
+  transform: rotate(15deg);
+}
+
+#trashpile8 {
+  position: absolute;
+  top: 2700px;
+  left: 2410px;
+  width: 20%;
+  opacity: .8;
+  transform: rotate(5deg);
+}
+
+#trashpile9 {
+  position: absolute;
+  top: 2751px;
+  left: 2590px;
+  width: 16%;
+  opacity: .5;
+  transform: rotate(-5deg);
+}
+
+#trashpile10 {
+  position: absolute;
+  top: 2810px;
+  left: 2750px;
+  width: 12%;
+  opacity: .8;
+}
+
+#trashpile11 {
+  position: absolute;
+  top: 2700px;
+  left: 2700px;
+  width: 17%;
+  opacity: .2;
+}
+
+#trashpile12 {
+  position: absolute;
+  top: 2650px;
+  left: 2400px;
+  width: 12%;
+  opacity: .2;
+}
+
+#trashpile13 {
+  position: absolute;
+  top: 2700px;
+  left: 1400px;
+  width: 16%;
+  opacity: .6;
+}
+
+#trashpile14 {
+  position: absolute;
+  top: 2665px;
+  left: 1500px;
+  width: 12%;
+  opacity: .4;
+}
+
+/* @keyframes floatingseagull {
+  0% { transform: translateY(0);
+  }
+  50% { transform: translateY(-15px);
+  };
+  100% {transform: translateY(15px);
+  };
+} */
+
+.birdthoughtbubbleanimation {
+  animation-name: birdthoughtbubbleanimate;
+  animation-delay: 10s;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes birdthoughtbubbleanimate {
+  0% {opacity: 1};
+  100% {opacity: 1};
+}
+
+#turtlethoughtbubble {
+  position: absolute;
+  width: 13%;
+  top: 1070px;
+  left: 2600px;
+  animation-name: turtlethoughtbubble;
+  animation-delay: 1s;
+  animation-duration: 11s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turtlethoughtbubble {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-850px);}
+}
+
+#turtle {
+  position: absolute;
+  width: 15%;
+  left: 2900px;
+  top: 1200px;
+  animation-name: turtleswim;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turtleswim {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-950px);}
+}
+
+
+#bag2 {
+  position: absolute;
+  width: 10%;
+  top: 1230px;
+  left: 1300px;
+  animation-name: bag2animation;
+  animation-delay: 2s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bag2animation {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(600px);}
+}
+
+.floatingbaganimation {
+  animation-name: floatingbaganimate;
+  animation-delay: 7s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes floatingbaganimate {
+  0% { transform: translateY(0);
+    opacity: 1;
+  }
+  50% { transform: translateY(-15px);
+    opacity: 1;
+  };
+  100% {transform: translateY(15px);
+    opacity: 1;
+  };
+}
+
+.fishThoughtBubbleAnimation {
+  animation-name: fishThoughtBubbleAnimate;
+  animation-delay: 4s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fishThoughtBubbleAnimate {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fish1animation {
+  position: absolute;
+  width: 10%;
+  top: 800px;
+  left: 1280px;
+  animation-name: fishspeak;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes fishspeak {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(500px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(1620px);
+  }
+}
+
+.baganimation {
+  animation-name: bagfloat;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(15000, end);
+}
+
+@keyframes bagfloat {
+  0.0000% { transform: translate(0.0px, 0.0px) ;
+    width: 20px;
+    height: 20px;
+   }
+  7.1% { transform: translate(50.2px, -10px) ;
+    width: 22px;
+    height: 22px;
+  }
+  14.2% { transform: translate(100.1px, -20px) ;
+    width: 25px;
+    height: 25px;
+  }
+  21.3% { transform: translate(200.2px, -40.5px) ;
+    width: 29px;
+    height: 29px;
+  }
+  28.4% { transform: translate(300px, -60.4px) ;
+    width: 34px;
+    height: 34px;
+  }
+  35.5% { transform: translate(400.5px, -99.4px) ;
+    width: 45px;
+    height: 45px;
+  }
+  42.6% { transform: translate(500.9px, -112.5px) ;
+    width: 49px;
+    height: 49px;
+  }
+  49.7% { transform: translate(600.4px, -122.7px) ;
+    width: 54px;
+    height: 54px;
+  }
+  56.8% { transform: translate(700.4px, -129.1px) ;
+    width: 59px;
+    height: 59px;
+  }
+  63.9% { transform: translate(800.0px, -130.8px) ;
+    width: 64px;
+    height: 64px;
+  }
+  71% { transform: translate(900.4px, -126.9px) ;
+    width: 69px;
+    height: 69px;
+  }
+  78.1% { transform: translate(1000.4px, -121.2px) ;
+    width: 74px;
+    height: 74px;
+  }
+  85.2% { transform: translate(1100.9px, -110.6px) ;
+    width: 79px;
+    height: 79px;
+  }
+  92.3% { transform: translate(1200.7px, -101.2px) ;
+    width: 84px;
+    height: 84px;
+  }
+  99.99%{
+    transform: translate(1300.0px, -40.0px) ;
+      width: 89px;
+      height: 89px;
+      opacity: 1;
+  }
+  100.0000% {
+    opacity: 0;
+  }
+}
+
+.bubblethree {
+  width: 22.5px;
+  height: 22.5px;
+  position: absolute;
+  top: 2800px;
+  left: 2360px;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  animation-name: bubble3move;
+  animation-duration: 20.5s;
+  animation-fill-mode: forwards;
+  animation-delay: .35s;
+}
+
+@keyframes bubble3move {
+  0% {transform: translateY(0px);
+opacity: .5;
+  }
+  95% {opacity: .5;}
+  100% {transform: translateY(-2410px);
+opacity: 0;
+  }
+}
+
+.bubbletwo {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 2835px;
+  left: 2390px;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  animation-name: bubble2move;
+  animation-duration: 21s;
+  animation-fill-mode: forwards;
+  animation-delay: .35s;
+}
+
+@keyframes bubble2move {
+  0% {transform: translateY(0px);
+opacity: .5;
+  }
+  95% {opacity: .5;}
+  100% {transform: translateY(-2445px);
+opacity: 0;
+  }
+}
+
+.bubbleone {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 2850px;
+  left: 2350px;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0;
+  animation-name: bubble1move;
+  animation-duration: 19.5s;
+  animation-fill-mode: forwards;
+  animation-delay: .35s;
+}
+
+@keyframes bubble1move {
+  0% {transform: translateY(0px);
+opacity: .5;
+  }
+  95% {opacity: .5;}
+  100% {transform: translateY(-2460px);
+opacity: 0;
+  }
+}
+
+#rightarrow {
+  position: absolute;
+  bottom: 25%;
+  right: 2%;
+  width: 10%;
+  /* opacity: 1; */
+  animation-name: moveright;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#downarrow {
+  position: absolute;
+  width: 10%;
+  transform: rotate(90deg);
+  left: 2750px;
+  top: 340px;
+  animation-name: moveright;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moveright {
+  0% {opacity: 0;};
+  /* 50% {opacity: 0;}; */
+  100% {opacity: 1;};
+}
+
+#jellyfish {
+  position: absolute;
+  width: 10%;
+  top: 1250px;
+  left: 1750px;
+  animation-name: jellyfishfloat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes jellyfishfloat {
+  0% { transform: translateY(0)};
+  50% { transform: translateY(-30px)};
+  100% {transform: translateY(30px)};
+}
+
+#crab {
+  position: absolute;
+  width: 6%;
+  top: 2850px;
+  left: 1900px;
+  animation-name: crabby;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes crabby {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-150px);}
+  75% {transform: translateX(300px);}
+  100% {transform: translateX(0px);}
+}
+
+#boat {
+  position: absolute;
+  width: 10%;
+  top: 272px;
+  left: 2700px;
+  animation-name: bobbing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate-reverse; */
+}
+
+@keyframes bobbing {
+  0% { transform: translateY(0);}
+  50% { transform: translateY(-15px);}
+  100% {transform: translateY(15px);}
+  100% {transform: translateY(0;)}
+}
