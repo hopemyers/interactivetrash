@@ -2,20 +2,13 @@ body {
 overflow-y: visible;
 overflow-x: visible;
 cursor: auto;
+/* height: 2984px;
+width: 2880px; */
 }
 
 .background {
   width: 2880px;
   height: 3000px;
-}
-
-#bee {transition: transform .1s;
-    position: absolute;
-    width: 89px;
-    height: 89px;
-    top: 340px;
-    left: 1700px;
-    opacity: 0;
 }
 
 #depthmeter {
@@ -101,14 +94,15 @@ cursor: auto;
 
 #seaweed4 {
   position: absolute;
-  top: 2798px;
+  top: 2805px;
   left: 2000px;
   width: 10%;
+  z-index: 3;
 }
 
 #seaweed5 {
   position: absolute;
-  top: 2788px;
+  top: 2840px;
   left: 1700px;
   width: 10%;
 }
@@ -119,6 +113,12 @@ cursor: auto;
   top: 2630px;
   left: 2000px;
   transform: rotate(-10deg);
+  z-index: 1;
+  opacity: .9;
+}
+
+#subwaycar:hover {
+  cursor: pointer;
 }
 
 #treasurechest {
@@ -159,7 +159,7 @@ cursor: auto;
 #fishthoughtbubble {
   position: absolute;
   width: 15%;
-  top: 520px;
+  top: 720px;
   left: 1950px;
   opacity: 0;
 }
@@ -170,6 +170,7 @@ cursor: auto;
   height: 100px;
   top: 340px;
   left: 1700px;
+  z-index: 1;
 }
 #floatingbag {
   /* position: absolute; */
@@ -180,7 +181,48 @@ cursor: auto;
   opacity: 0;
 }
 
-/* Animations */
+#narratorshrimp {
+  position: absolute;
+  width: 5%;
+  top: 650px;
+  left: 2650px;
+  opacity: 0;
+}
+
+#narratorshrimpspeechbubble {
+  position: absolute;
+  width: 15%;
+  top: 475px;
+  left: 2475px;
+  opacity: 0;
+}
+
+#narratorshrimpwords {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: black; */
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
+  position: absolute;
+  top: 480px;
+  left: 2480px;
+  opacity: 0;
+}
+
+.narratorshrimpfadeaway {
+  animation-name: narratorshrimpanimate;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes narratorshrimpanimate {
+    0% {opacity: 1};
+    /* .1% {opacity: 0}; */
+    100% {opacity: 0};
+}
 
 #seagull {
   position: absolute;
@@ -202,6 +244,15 @@ cursor: auto;
   width: 15%;
   top: 95px;
   left: 154%;
+  opacity: 0;
+}
+
+#scrolldown {
+  position: fixed;
+  width: 10%;
+  bottom: 5%;
+  left: 0%;
+  transform: rotate(90deg);
   opacity: 0;
 }
 
@@ -453,7 +504,7 @@ cursor: auto;
 }
 
 #eastereggtitle {
-  margin-top: 5px;
+  margin-top: 3px;
   width: 96px;
   text-align: center;
   height: 20px;
@@ -478,10 +529,58 @@ cursor: auto;
   opacity: .4;
 }
 
-#checkbottle {
-  width: 100%;
-  top: 0%;
-  left: 0%;
+#fishcheck {
+  width: 40px;
+  height: 40px;
+  top: 157px;
+  left: 1380px;
+  position: fixed;
+  opacity: 0;
+}
+
+#bagcheck {
+  width: 40px;
+  height: 40px;
+  top: 157px;
+  left: 1332px;
+  position: fixed;
+  opacity: 0;
+}
+
+#bottlecheck {
+  width: 40px;
+  height: 40px;
+  top: 205px;
+  left: 1332px;
+  position: fixed;
+  opacity: 0;
+}
+
+#shrimpcheck {
+  width: 40px;
+  height: 40px;
+  top: 205px;
+  left: 1380px;
+  position: fixed;
+  opacity: 0;
+}
+
+#whalecheck {
+  width: 40px;
+  height: 40px;
+  top: 253px;
+  left: 1332px;
+  position: fixed;
+  opacity: 0;
+}
+
+#subwaycarcheck {
+  width: 40px;
+  height: 40px;
+  top: 253px;
+  left: 1380px;
+  position: fixed;
+  opacity: 0;
 }
 
 #eggpopup{
@@ -517,12 +616,16 @@ cursor: auto;
 
 #birdwords {
   position: absolute;
-  height: 55px;
-  width: 118px;
-  top: 160px;
-  left: 2255px;
-  font-size: 100%;
-  text-align: center;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: black; */
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
+  /* top: 160px;
+  left: 2255px; */
+  top: 100px;
+  left: 2220px;
   opacity: 0;
 }
 
@@ -530,8 +633,8 @@ cursor: auto;
   position: absolute;
   height: 30px;
   width: 30px;
-  left: 2370px;
-  top: 180px;
+  left: 2400px;
+  top: 175px;
   opacity: 0;
 }
 
@@ -539,41 +642,38 @@ cursor: auto;
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
   position: absolute;
-  height: 55px;
-  width: 118px;
-  top: 585px;
-  left: 2007px;
-  font-size: 100%;
-  text-align: center;
+  top: 725px;
+  left: 1954px;
   opacity: 0;
 }
 
 #turtlewords {
+  position: absolute;
+  top: 1555px;
+  left: 2605px;
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  position: absolute;
-  height: 55px;
-  width: 118px;
-  top: 1615px;
-  left: 2640px;
-  font-size: 100%;
-  text-align: center;
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
   opacity: 0;
 }
 
 #shrimpwords {
+  position: absolute;
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  position: absolute;
-  height: 55px;
-  width: 118px;
-  top: 1525px;
-  left: 1760px;
-  font-size: 100%;
-  text-align: center;
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
+  top: 1465px;
+  left: 1708px;
   opacity: 0;
 }
 
@@ -586,16 +686,15 @@ cursor: auto;
 }
 
 #youngbagwords {
+  position: absolute;
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  position: absolute;
-  height: 55px;
-  width: 118px;
-  top: 1115px;
-  left: 1885px;
-  font-size: 100%;
-  text-align: center;
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
+  top: 1055px;
+  left: 1850px;
   opacity: 0;
 }
 
@@ -608,29 +707,90 @@ cursor: auto;
 }
 
 #oldbagwords {
+  position: absolute;
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  position: absolute;
-  height: 55px;
-  width: 118px;
-  top: 1095px;
-  left: 2168px;
-  font-size: 100%;
-  text-align: center;
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
+  top: 1035px;
+  left: 2133px;
   opacity: 0;
+}
+
+#specialbag {
+  position: absolute;
+  width: 4%;
+  top: 725px;
+  left: 1365px;
+  transform: rotate(-45deg);
+  z-index: 2;
+  opacity: .6;
+}
+
+#specialbag:hover {
+  cursor: pointer;
+}
+
+.specialbagfloat {
+  animation-name: specialbaganimate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes specialbaganimate {
+  0% {transform: translateX(0px)}
+  100% {transform: translateX(420px)}
 }
 
 #whale {
   width: 50%;
   position: absolute;
-  top: 2100px;
-  left: 1600px;
+  top: 2160px;
+  left: 1500px;
   opacity: .7;
   z-index: 2;
 }
 
 #whale:hover{
+  cursor: pointer;
+}
+
+.whaleanimation {
+  animation-name: whaleanimate;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes whaleanimate {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(1400px);}
+}
+
+#fishfish {
+  position: absolute;
+  width: 7%;
+  top: 450px;
+  left: 2890px;
+  animation-name: fishfishswim;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  z-index: 2;
+  opacity: 0;
+}
+
+@keyframes fishfishswim {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-1600px)}
+}
+
+#fishfish:hover {
   cursor: pointer;
 }
 
@@ -653,7 +813,7 @@ cursor: auto;
 
 .oldbaganimation {
   animation-name: oldbaganimate;
-  animation-duration: 12s;
+  animation-duration: 6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
@@ -668,7 +828,7 @@ cursor: auto;
 
 .oldbagswimawayanimation{
   animation-name: oldbagswimawayanimate;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
@@ -677,7 +837,7 @@ cursor: auto;
 @keyframes oldbagswimawayanimate {
   0% {transform: translate(0px, 0px);
       opacity: 1}
-  100% {transform: translate(-450px, -270px);
+  100% {transform: translate(-300px, -500px);
         opacity: 0}
 }
 
@@ -704,8 +864,8 @@ cursor: auto;
 
 .youngbaganimation{
   animation-name: youngbaganimate;
-  animation-delay: 7s;
-  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
@@ -892,8 +1052,8 @@ cursor: auto;
 }
 
 @keyframes turtleawayanimate {
-  0% {transform: translateX(0px);}
-  100% {transform: translateX(-1050px);}
+  0% {transform: translateX(-650px);}
+  100% {transform: translateX(1050px);}
 }
 
 #eatenbag {
@@ -957,7 +1117,7 @@ cursor: auto;
 #dolphin {
   position: absolute;
   width: 20%;
-  top: 600px;
+  top: 800px;
   left: 1150px;
   opacity: 0;
 }
@@ -1073,79 +1233,27 @@ cursor: auto;
   }
 }
 
-.bubblethree {
-  width: 22.5px;
-  height: 22.5px;
+.shrimps {
+  z-index: 2;
+  opacity: .7;
+}
+
+.shrimps:hover {
+  cursor: pointer;
+}
+
+#bottle {
   position: absolute;
-  top: 2800px;
-  left: 2360px;
-  background-color: white;
-  border-radius: 100px;
-  opacity: 0;
-  animation-name: bubble3move;
-  animation-duration: 20.5s;
-  animation-fill-mode: forwards;
-  animation-delay: .35s;
+  width: 2%;
+  top: 1425px;
+  left: 2450px;
+  transform: rotate(45deg);
+  z-index: 2;
+  opacity: .7;
 }
 
-@keyframes bubble3move {
-  0% {transform: translateY(0px);
-opacity: .5;
-  }
-  95% {opacity: .5;}
-  100% {transform: translateY(-2410px);
-opacity: 0;
-  }
-}
-
-.bubbletwo {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 2835px;
-  left: 2390px;
-  background-color: white;
-  border-radius: 100px;
-  opacity: 0;
-  animation-name: bubble2move;
-  animation-duration: 21s;
-  animation-fill-mode: forwards;
-  animation-delay: .35s;
-}
-
-@keyframes bubble2move {
-  0% {transform: translateY(0px);
-opacity: .5;
-  }
-  95% {opacity: .5;}
-  100% {transform: translateY(-2445px);
-opacity: 0;
-  }
-}
-
-.bubbleone {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 2850px;
-  left: 2350px;
-  background-color: white;
-  border-radius: 100px;
-  opacity: 0;
-  animation-name: bubble1move;
-  animation-duration: 19.5s;
-  animation-fill-mode: forwards;
-  animation-delay: .35s;
-}
-
-@keyframes bubble1move {
-  0% {transform: translateY(0px);
-opacity: .5;
-  }
-  95% {opacity: .5;}
-  100% {transform: translateY(-2460px);
-opacity: 0;
-  }
+#bottle:hover {
+  cursor: pointer;
 }
 
 #rightarrow {
@@ -1204,11 +1312,13 @@ opacity: 0;
 #crab {
   position: absolute;
   width: 6%;
-  top: 2850px;
+  top: 2880px;
   left: 1900px;
   animation-name: crabby;
   animation-duration: 15s;
   animation-iteration-count: infinite;
+  z-index: 3;
+  opacity: .8;
 }
 
 @keyframes crabby {
