@@ -1,6 +1,7 @@
 window.onscroll = function() {myFunction()};
 
 function scrollright(scrollDuration) {
+  document.getElementById('bgm').play();
   document.getElementById('bag').className = "baganimation";
   document.getElementById('floatingbag').className = "floatingbagopacityanimation";
   document.getElementById('floatingbagmovement').className = "floatingbaganimation";
@@ -55,12 +56,20 @@ function myFunction() {
 
   if(document.documentElement.scrollTop > 2280 && eggsfound < 6 && remindrun === 0){
     console.log("find all the eggs!");
+    document.getElementById('remindershrimp').style.opacity = 1;
+    document.getElementById('remindershrimpwords').style.opacity = 1;
+    document.getElementById('reminderthoughtbubble').style.opacity = 1;
+    setTimeout(function(){document.getElementById('remindershrimp').style.opacity = 0}, 7000);
+    setTimeout(function(){document.getElementById('remindershrimpwords').style.opacity = 0}, 7000);
+    setTimeout(function(){document.getElementById('reminderthoughtbubble').style.opacity = 0}, 7000);
     remindrun = 1;
   }
 
   if(document.documentElement.scrollTop > 1800 && whalerun === 0) {
     document.body.style.overflowY = "hidden";
-    setTimeout(function(){document.body.style.overflowY = "visible"}, 15000)
+    setTimeout(function(){document.body.style.overflowY = "visible"}, 9000)
+    setTimeout(function(){document.getElementById('scrolldown').style.opacity = 1;}, 9000)
+    whalerun = 1;
   }
   if(document.documentElement.scrollTop > 1350 && turtlerun ===0){
     // for the turtle animation and thought bubble pop up
@@ -148,12 +157,14 @@ function myFunction() {
   }
   if(document.documentElement.scrollTop > 377){
     // show anchor
+    document.body.style.overflowX = "hidden";
+    document.getElementById('wave').play();
     document.getElementById('depthmeter').style.opacity = 1;
     document.getElementById('rope').style.opacity = 1;
     document.getElementById('anchor').style.opacity = 1;
     document.getElementById('eastereggbox').style.opacity = .8;
     document.getElementById('eggbehind').style.opacity = .4;
-    console.log(document.documentElement.scrollTop);
+    // console.log(document.documentElement.scrollTop);
 
   }
   if(document.documentElement.scrollTop > 370 && dolphinrun === 0){
@@ -165,8 +176,8 @@ function myFunction() {
     document.getElementById('narratorshrimp').style.opacity = 1;
 
     setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "See the things in the box next to me? Those are called easter eggs."}, 3000);
-    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "They are all somewhere in this ocean, can you help me look for them?"}, 7000);
-    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "Try and find all of them to get a prize!"}, 11000);
+    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "They are all somewhere in the New York Harbor, can you help me look for them?"}, 7000);
+    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "Try and find all of them to learn more about ???????"}, 11000);
     setTimeout(function(){document.getElementById('narratorshrimpwords').style.opacity = 0}, 15000);
     setTimeout(function(){document.getElementById('narratorshrimpspeechbubble').style.opacity = 0}, 15000);
     setTimeout(function(){document.getElementById('narratorshrimp').className = "narratorshrimpfadeaway"}, 15000);
@@ -174,24 +185,23 @@ function myFunction() {
     setTimeout(function(){document.getElementById('dolphin').className = "fish1animation"}, 16000);
     setTimeout(function(){document.getElementById('fishthoughtbubble').style.opacity = 1}, 20000);
     setTimeout(function(){document.getElementById('dolphinwords').style.opacity = 1}, 20000);
-    setTimeout(function(){document.getElementById('dolphinwords').innerHTML = "There's a lot of trash in the ocean, I don't like it" }, 24000);
-    setTimeout(function(){document.getElementById('dolphinwords').innerHTML = "Sometimes I get caught in fishing nets and it hurts" }, 30000);
-    setTimeout(function(){document.getElementById('dolphinwords').innerHTML = "There should really be less trash!" }, 34000);
-    setTimeout(function(){document.getElementById('dolphinwords').style.opacity = 0}, 38000);
-    setTimeout(function(){document.getElementById('fishthoughtbubble').style.opacity = 0}, 38000);
-    setTimeout(function(){document.getElementById('dolphin').style.left = "1680px"}, 39000);
-    setTimeout(function(){document.getElementById('dolphin').className = "dolphinswimaway"}, 39000);
-    setTimeout(function(){document.getElementById('fishfish').style.opacity = .7;}, 40000);
-    setTimeout(function(){document.getElementById('narratorshrimp').style.opacity = 1}, 45000);
-    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "Don't forget to look for the easter eggs! I see a few floating around"}, 45000);
-    setTimeout(function(){document.getElementById('narratorshrimpwords').style.opacity = 1}, 45000);
-    setTimeout(function(){document.getElementById('narratorshrimpspeechbubble').style.opacity = 1;}, 45000);
-    setTimeout(function(){document.getElementById('specialbag').className = "specialbagfloat"}, 48000);
-    setTimeout(function(){document.getElementById('narratorshrimpwords').style.opacity = 0}, 52000);
-    setTimeout(function(){document.getElementById('narratorshrimpspeechbubble').style.opacity = 0}, 52000);
+    setTimeout(function(){document.getElementById('dolphinwords').innerHTML = "There's usually a lot of trash in the ocean," }, 24000);
+    setTimeout(function(){document.getElementById('dolphinwords').innerHTML = "but it's looking clearer today" }, 30000);
+    setTimeout(function(){document.getElementById('dolphinwords').style.opacity = 0}, 34000);
+    setTimeout(function(){document.getElementById('fishthoughtbubble').style.opacity = 0}, 34000);
+    setTimeout(function(){document.getElementById('dolphin').style.left = "1680px"}, 35000);
+    setTimeout(function(){document.getElementById('dolphin').className = "dolphinswimaway"}, 35000);
+    setTimeout(function(){document.getElementById('fishfish').style.opacity = .7;}, 36000);
+    setTimeout(function(){document.getElementById('narratorshrimp').style.opacity = 1}, 41000);
+    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "Don't forget to look for the easter eggs! I see a few floating around"}, 41000);
+    setTimeout(function(){document.getElementById('narratorshrimpwords').style.opacity = 1}, 41000);
+    setTimeout(function(){document.getElementById('narratorshrimpspeechbubble').style.opacity = 1;}, 41000);
+    setTimeout(function(){document.getElementById('specialbag').className = "specialbagfloat"}, 44000);
+    setTimeout(function(){document.getElementById('narratorshrimpwords').style.opacity = 0}, 48000);
+    setTimeout(function(){document.getElementById('narratorshrimpspeechbubble').style.opacity = 0}, 48000);
 
     setTimeout(function(){document.body.style.overflowY = "visible"}, 70000);
-    setTimeout(function(){document.getElementById('scrolldown').style.opacity = 1;}, 70000);
+    setTimeout(function(){document.getElementById('scrolldown').style.opacity = 1;}, 66000);
 
     dolphinrun = 1;
 
@@ -211,12 +221,55 @@ function myFunction() {
     document.getElementById('subwaycarcheck').style.opacity = 0;
   }
 
-  if(eggsfound === 6 && foundrun === 0){
-    console.log("you found all the eggs!")
-    foundrun = 1;
-  }
+
 
 }
+
+
+function checkeggs() {
+  if(eggsfound === 6 && foundrun === 0){
+    console.log("you found all the eggs!")
+    setTimeout(function(){document.getElementById('eggpopup').style.opacity = 1;}, 15000);
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Yay! You’ve found all the easter eggs!"}, 15000);
+    setTimeout(function(){document.getElementById('eggpopupwords').style.opacity = 1}, 18000);
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "When you use less plastic and recycle, you can help prevent 14 billion pounds of plastic from entering the ocean!"}, 23000);
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Start now by clicking on the piles of trash to help clean the bottom of the ocean"}, 30000);
+    setTimeout(function(){document.getElementById('trashpile1').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile2').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile3').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile4').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile5').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile6').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile7').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile8').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile9').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile10').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile11').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile12').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile13').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile14').style.zIndex = "2";}, 30000);
+    setTimeout(function(){document.getElementById('trashpile1').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile2').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile3').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile4').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile5').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile6').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile7').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile8').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile9').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile10').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile11').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile12').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile13').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('trashpile14').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Head on over to WCS.org to learn more!"}, 38000);
+    setTimeout(function(){document.getElementById('eggpopupwords').style.opacity = 0;}, 45000);
+    setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 45000);
+    
+    foundrun = 1;
+  }
+}
+
 
 // seagull speaking
 
@@ -235,11 +288,17 @@ function plusBirdSlides()  {
   }
 }
 
-window.addEventListener(eggsfound === 6)
-
-
+let whalefactover = 0;
+let subwayfactover = 0;
+let bottlefactover = 0;
+let bagfactover = 0;
+let shrimpfactover = 0;
+let fishfactover = 0;
 
 function whalefact() {
+  if(whalefactover === 0){
+  document.getElementById('bubble').play();
+  document.getElementById('bubble').loop = false;
   document.getElementById('whale').className = "whaleanimation";
   document.getElementById('eggpopupwords').innerHTML = "Whales feel sick because you can find hosepipes, plastic pots and disposable bags in their stomachs";
   document.getElementById('eggpopup').style.opacity = .8;
@@ -248,10 +307,16 @@ function whalefact() {
   document.getElementById('whalecheck').style.opacity = 1;
   setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 7000);
   eggsfound = eggsfound + 1;
+  whalefactover = 1;
+  console.log(eggsfound);
+}
 }
 
 function subwayfact() {
-  document.getElementById('eggpopupwords').innerHTML = "When trash flows out in currents, they collect together and create garbage patches";
+  if(subwayfactover === 0){
+  document.getElementById('bubble').play();
+  document.getElementById('bubble').loop = false;
+  document.getElementById('eggpopupwords').innerHTML = "Old subway cars can be recycled and reused as reefs for fish to live in";
     // needs to be changed to fact about the subway
     document.getElementById('eggpopup').style.opacity = .8;
     document.getElementById('eggpopupwords').style.opacity = 1;
@@ -259,9 +324,15 @@ function subwayfact() {
     document.getElementById('subwaycarcheck').style.opacity = 1;
     setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 7000);
     eggsfound = eggsfound + 1;
+    subwayfactover = 1;
+    console.log(eggsfound);
+}
 }
 
 function fishfact() {
+  if(fishfactover === 0){
+  document.getElementById('bubble').play();
+  document.getElementById('bubble').loop = false;
   document.getElementById('eggpopupwords').innerHTML = "Sometimes plastic in the ocean, called microplastic, is so small you can’t even see it!";
   document.getElementById('eggpopup').style.opacity = .8;
   document.getElementById('eggpopupwords').style.opacity = 1;
@@ -270,9 +341,15 @@ function fishfact() {
   setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "When fishes eat the plastic, it goes up the food chain and we humans end up eating it too!"}, 7000);
   setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 14000);
   eggsfound = eggsfound + 1;
+  fishfactover = 1;
+  console.log(eggsfound);
+}
 }
 
 function shrimpfact() {
+  if(shrimpfactover === 0){
+  document.getElementById('bubble').play();
+  document.getElementById('bubble').loop = false;
   document.getElementById('eggpopupwords').innerHTML = "If we don’t do anything, most seafood could be wiped out in less than 40 years";
   document.getElementById('eggpopup').style.opacity = .8;
   document.getElementById('eggpopupwords').style.opacity = 1;
@@ -281,9 +358,15 @@ function shrimpfact() {
   setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "In 100 years, jellyfish may be the only wild seafood left!"}, 7000);
   setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 14000);
   eggsfound = eggsfound + 1;
+  shrimpfactover = 1;
+  console.log(eggsfound);
+}
 }
 
 function bottlefact() {
+  if(bottlefactover === 0){
+  document.getElementById('bubble').play();
+  document.getElementById('bubble').loop = false;
   document.getElementById('eggpopupwords').innerHTML = "The ocean’s currents move all around the world";
   document.getElementById('eggpopup').style.opacity = .8;
   document.getElementById('eggpopupwords').style.opacity = 1;;
@@ -292,9 +375,15 @@ function bottlefact() {
   setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "One current circles between New york and the Northwest coast of Africa often bringing trash with it."}, 5000);
   setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 12000);
   eggsfound = eggsfound + 1;
+  bottlefactover = 1;
+  console.log(eggsfound);
+}
 }
 
 function bagfact() {
+  if(bagfactover === 0){
+  document.getElementById('bubble').play();
+  document.getElementById('bubble').loop = false;
   document.getElementById('eggpopupwords').innerHTML = "New York City uses more than 10 billion single-use plastic bags a year!";
   document.getElementById('eggpopup').style.opacity = .8;
   document.getElementById('eggpopupwords').style.opacity = 1;
@@ -302,4 +391,63 @@ function bagfact() {
   document.getElementById('bagcheck').style.opacity = 1;
   setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 7000);
   eggsfound = eggsfound + 1;
+  bagfactover = 1;
+  console.log(eggsfound);
+}
+}
+
+function trashaway1() {
+  document.getElementById('trashpile1').style.opacity = 0;
+}
+
+function trashaway2() {
+  document.getElementById('trashpile2').style.opacity = 0;
+}
+
+function trashaway3() {
+  document.getElementById('trashpile3').style.opacity = 0;
+}
+
+function trashaway4() {
+  document.getElementById('trashpile4').style.opacity = 0;
+}
+
+function trashaway5() {
+  document.getElementById('trashpile5').style.opacity = 0;
+}
+
+function trashaway6() {
+  document.getElementById('trashpile6').style.opacity = 0;
+}
+
+function trashaway7() {
+  document.getElementById('trashpile7').style.opacity = 0;
+}
+
+function trashaway8() {
+  document.getElementById('trashpile8').style.opacity = 0;
+}
+
+function trashaway9() {
+  document.getElementById('trashpile9').style.opacity = 0;
+}
+
+function trashaway10() {
+  document.getElementById('trashpile10').style.opacity = 0;
+}
+
+function trashaway11() {
+  document.getElementById('trashpile11').style.opacity = 0;
+}
+
+function trashaway12() {
+  document.getElementById('trashpile12').style.opacity = 0;
+}
+
+function trashaway13() {
+  document.getElementById('trashpile13').style.opacity = 0;
+}
+
+function trashaway14() {
+  document.getElementById('trashpile14').style.opacity = 0;
 }

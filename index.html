@@ -12,29 +12,29 @@
      <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body id="thebody">
+  <body id="thebody" onmousemove="checkeggs()">
     <div class="background"> </div>
 <!-- Things that are below the water -->
 
 <!-- trashpiles -->
-  <img id="trashpile14" src="images/trashpile.png"></img>
-  <img id="trashpile13" src="images/trashpile.png"></img>
-  <img id="trashpile12" src="images/trashpile.png"></img>
-  <img id="trashpile11" src="images/trashpile.png"></img>
-  <img id="trashpile9" src="images/trashpile.png"></img>
-  <img id="trashpile10" src="images/trashpile.png"></img>
-  <img id="trashpile7" src="images/trashpile.png"></img>
-  <img id="trashpile6" src="images/trashpile.png"></img>
-  <img id="trashpile8" src="images/trashpile.png"></img>
-  <img id="trashpile5" src="images/trashpile.png"></img>
-  <img id="trashpile3" src="images/trashpile.png"></img>
-  <img id="trashpile2" src="images/trashpile.png"></img>
-  <img id="trashpile4" src="images/trashpile.png"></img>
-  <img id="trashpile1" src="images/trashpile.png"></img>
+  <img id="trashpile14" class="trashpile" src="images/trashpile.png" onclick="trashaway14()"></img>
+  <img id="trashpile13" class="trashpile" src="images/trashpile.png" onclick="trashaway13()"></img>
+  <img id="trashpile12"  class="trashpile" src="images/trashpile.png" onclick="trashaway12()"></img>
+  <img id="trashpile11" class="trashpile" src="images/trashpile.png" onclick="trashaway11()"></img>
+  <img id="trashpile9" class="trashpile" src="images/trashpile.png" onclick="trashaway9()"></img>
+  <img id="trashpile10" class="trashpile" src="images/trashpile.png" onclick="trashaway10()"></img>
+  <img id="trashpile7" class="trashpile" src="images/trashpile.png" onclick="trashaway7()"></img>
+  <img id="trashpile6" class="trashpile" src="images/trashpile.png" onclick="trashaway6()"></img>
+  <img id="trashpile8" class="trashpile" src="images/trashpile.png" onclick="trashaway8()"></img>
+  <img id="trashpile5" class="trashpile" src="images/trashpile.png" onclick="trashaway5()"></img>
+  <img id="trashpile3" class="trashpile" src="images/trashpile.png" onclick="trashaway3()"></img>
+  <img id="trashpile2" class="trashpile" src="images/trashpile.png" onclick="trashaway2()"></img>
+  <img id="trashpile4" class="trashpile" src="images/trashpile.png" onclick="trashaway4()"></img>
+  <img id="trashpile1" class="trashpile" src="images/trashpile.png" onclick="trashaway1()"></img>
 
   <!-- background fish -->
-  <img id="backgroundfish1" src="images/backgroundfishright.png"></img>
-  <img id="backgroundfish2" src="images/backgroundfishleft.png"></img>
+  <img id="backgroundfish1" src="images/backgroundfishleft.png"></img>
+  <img id="backgroundfish2" src="images/backgroundfishright.png"></img>
   <img id="backgroundfish3" src="images/backgroundfishleft.png"></img>
   <img id="backgroundfish4" src="images/backgroundfishright.png"></img>
   <img id="backgroundfish5" src="images/backgroundfishright.png"></img>
@@ -91,7 +91,8 @@
     <img id="bottle" src="images/bottle.png" onclick="bottlefact()"></img>
     <img id="specialbag" src="images/bag3.png" onclick="bagfact()"></img>
     <img id="remindershrimp" src="images/shrimp.png"></img>
-    <img id="reminderthoughtbubble" src="rightthoughtbubble"></img>
+    <img id="reminderthoughtbubble" src="images/rightthoughtbubble.png"></img>
+    <div id="remindershrimpwords">Don't forget to find all the easter eggs! You can go back up to find the rest.</div>
 
 
 <!-- Things that are on top of the water -->
@@ -119,9 +120,16 @@
     <img id="shrimpcheck" src="images/checkmark.png"></img>
     <img id="whalecheck" src="images/checkmark.png"></img>
     <img id="subwaycarcheck" src="images/checkmark.png"></img>
+    <div id="title"> Trashley's Journey </div>
 
 
 
+
+
+    <audio id="bgm" src="audio/background.wav" loop="true"></audio>
+    <audio id="whaleaudio" src="audio/whale.wav" loop="false"></audio>
+    <audio id="wave" src="audio/wave.wav" loop="false"></audio>
+    <audio id="bubble" src="audio/bubble.wav" loop="false"></audio>
 
 
 <!-- problems: -->

@@ -11,6 +11,14 @@ width: 2880px; */
   height: 3000px;
 }
 
+#title {
+  position: absolute;
+  font-size: 500%;
+  top: 500px;
+  left: 300px;
+  color: #D8D8D8;
+}
+
 #depthmeter {
   position: fixed;
   top: 100px;
@@ -44,10 +52,28 @@ width: 2880px; */
   width: 5%;
   left: 1600px;
   top: 2600px;
+  opacity: 0;
 }
 
 #reminderthoughtbubble {
+  position: absolute;
+  width: 15%;
+  left: 1640px;
+  top: 2450px;
+  opacity: 0;
+}
 
+#remindershrimpwords {
+  position: absolute;
+  top: 2455px;
+  left: 1645px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: black; */
+  height: 105px;
+  width: 205px;
+  font-size: 150%;
+  opacity: 0;
 }
 
 .left {
@@ -108,7 +134,7 @@ width: 2880px; */
   top: 2805px;
   left: 2000px;
   width: 10%;
-  z-index: 3;
+  z-index: 4;
 }
 
 #seaweed5 {
@@ -124,7 +150,7 @@ width: 2880px; */
   top: 2630px;
   left: 2000px;
   transform: rotate(-10deg);
-  z-index: 1;
+  z-index: 3;
   opacity: .9;
 }
 
@@ -386,49 +412,103 @@ width: 2880px; */
 #backgroundfish1 {
   position: absolute;
   width: 12%;
-  left: 2500px;
+  left: 2880px;
   top: 500px;
   opacity: .5;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-name: bgfish1;
+}
+
+@keyframes bgfish1 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-1600px)}
 }
 
 #backgroundfish2 {
   position: absolute;
   width: 18%;
-  left: 1600px;
+  left: 1300px;
   top: 700px;
   opacity: .3;
+  animation-iteration-count: infinite;
+  animation-duration: 19s;
+  animation-timing-function: linear;
+  animation-name: bgfish2;
+}
+
+@keyframes bgfish2 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(1600px)}
 }
 
 #backgroundfish3 {
   position: absolute;
   width: 15%;
-  left: 2300px;
+  left: 2880px;
   top: 1000px;
   opacity: .35;
+  animation-iteration-count: infinite;
+  animation-duration: 11s;
+  animation-timing-function: linear;
+  animation-name: bgfish3;
+}
+
+@keyframes bgfish3 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-1600px)}
 }
 
 #backgroundfish4 {
   position: absolute;
   width: 10%;
-  left: 1500px;
+  left: 1300px;
   top: 1200px;
   opacity: .6;
+  animation-iteration-count: infinite;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-name: bgfish4;
+}
+
+@keyframes bgfish4 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(1600px)}
 }
 
 #backgroundfish5 {
   position: absolute;
   width: 23%;
-  left: 1900px;
+  left: 1300px;
   top: 1400px;
   opacity: .3;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-name: bgfish5;
+}
+
+@keyframes bgfish5 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(1600px)}
 }
 
 #backgroundfish6 {
   position: absolute;
   width: 15%;
-  left: 2550px;
+  left: 2880px;
   top: 1700px;
   opacity: .4;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-name: bgfish6;
+}
+
+@keyframes bgfish6 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-1600px)}
 }
 
 #backgroundfish7 {
@@ -437,22 +517,49 @@ width: 2880px; */
   left: 1600px;
   top: 1900px;
   opacity: .3;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-name: bgfish7;
+}
+
+@keyframes bgfish7 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-1600px)}
 }
 
 #backgroundfish8 {
   position: absolute;
   width: 10%;
-  left: 2300px;
+  left: 1300px;
   top: 2150px;
   opacity: .4;
+  animation-iteration-count: infinite;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-name: bgfish8;
+}
+
+@keyframes bgfish8 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(1600px)}
 }
 
 #backgroundfish9 {
   position: absolute;
   width: 25%;
-  left: 1700px;
+  left: 1300px;
   top: 2400px;
   opacity: .2;
+  animation-iteration-count: infinite;
+  animation-duration: 35s;
+  animation-timing-function: linear;
+  animation-name: bgfish9;
+}
+
+@keyframes bgfish9 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(1600px)}
 }
 
 #backgroundfish10 {
@@ -461,6 +568,15 @@ width: 2880px; */
   left: 2600px;
   top: 2600px;
   opacity: .3;
+  animation-iteration-count: infinite;
+  animation-duration: 35s;
+  animation-timing-function: linear;
+  animation-name: bgfish10;
+}
+
+@keyframes bgfish10 {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-1600px)}
 }
 
 #shrimp1 {
@@ -1328,7 +1444,7 @@ width: 2880px; */
   animation-name: crabby;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  z-index: 3;
+  z-index: 5;
   opacity: .8;
 }
 
