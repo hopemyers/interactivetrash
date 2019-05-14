@@ -32,6 +32,18 @@
   <img id="trashpile4" src="images/trashpile.png"></img>
   <img id="trashpile1" src="images/trashpile.png"></img>
 
+  <!-- background fish -->
+  <img id="backgroundfish1" src="images/backgroundfishright.png"></img>
+  <img id="backgroundfish2" src="images/backgroundfishleft.png"></img>
+  <img id="backgroundfish3" src="images/backgroundfishleft.png"></img>
+  <img id="backgroundfish4" src="images/backgroundfishright.png"></img>
+  <img id="backgroundfish5" src="images/backgroundfishright.png"></img>
+  <img id="backgroundfish6" src="images/backgroundfishleft.png"></img>
+  <img id="backgroundfish7" src="images/backgroundfishleft.png"></img>
+  <img id="backgroundfish8" src="images/backgroundfishright.png"></img>
+  <img id="backgroundfish9" src="images/backgroundfishright.png"></img>
+  <img id="backgroundfish10" src="images/backgroundfishleft.png"></img>
+
   <!-- other stuff -->
 
     <img id="sun" src="images/sun.png"></img>
@@ -45,31 +57,63 @@
     <img id="crab" src="images/crab.png"></img>
 
     <!-- <img id="downarrow" src="images/arrow.png"></img> -->
-    <img id="fish1" src="images/fish1.png"></img>
-    <img id="fishthoughtbubble" src="images/fishthoughtbubble.png"></img>
+    <!-- <img id="fish1" src="images/fish1.png"></img> -->
+    <img id="dolphin" src="images/dolphin.png"></img>
+    <div id="fishthoughtbubbleopacity"><img id="fishthoughtbubble" src="images/rightthoughtbubble.png"></img></div>
+    <div id="dolphinwordsopacity"><div id="dolphinwords">Hi I'm Dolphie!</div></div>
     <div id="bee"><img src="images/bag.png"></img></div>
-    <img id="seagull" src="images/seagull.png"></img>
+    <div id="seagullspin"><img id="seagull" src="images/seagull.png"></img></div>
     <img id="anchor" src="images/anchor.png"></img>
     <div id="depthmeter"></div>
     <div id="rope"></div>
     <img id="jellyfish" src="images/jellyfish.png"></img>
-    <img id="bag2" src="images/bag2.png"></img>
-    <img id="turtle" src="images/turtle.png"></img>
-    <img id="turtlethoughtbubble" src="images/turtlethoughtbubble.png"></img>
+    <img id="eatenbag" src="images/bag2.png"></img>
+    <img id="turtlethoughtbubble" src="images/leftthoughtbubble.png"></img>
+    <div id="turtlewordsopacity"><div id="turtlewords"> I'm so hungry! </div></div>
+    <img id="shrimp1" src="images/shrimp.png"></img>
+    <img id="shrimp2" src="images/shrimp.png"></img>
+    <img id="shrimp3" src="images/shrimp.png"></img>
+    <div id="turtleaway"><img id="turtle" class="" src="images/turtleopenmouth.png"></img></div>
+    <img id="shrimpthoughtbubble" src="images/rightthoughtbubble.png"></img>
+    <div id="shrimpwords"> Oh no! Poor Finn ate that plastic bag. </div>
+    <img id="youngbag" src="images/baggy.png"></img>
+    <img id="youngbagthoughtbubble" src="images/rightthoughtbubble.png"></img>
+    <div id="youngbagwords"> Hi! I'm Baggy, what's your name? </div>
+    <img id="oldbag" src="images/oldbag.png"></img>
+    <img id="oldbagthoughtbubble" src="images/leftthoughtbubble.png"></img>
+    <div id="oldbagwords"> My name is Prince Louis</div>
+    <img id="whale" src="images/whale.png" onclick="whalefact()"></img>
+    <div id="eggpopup"><img id="bubblepic" src="images/bubble.png"></img><div id="eggpopupwords"> Easter egg facts go here Easter egg facts go here Easter egg facts go here Easter egg facts go here Easter egg facts go here</div></div>
 
 
-
-    <img id="rightarrow" src="images/startarrow.png" onclick="scrollright(3000)"></img>
 <!-- Things that are on top of the water -->
+    <img id="rightarrow" src="images/startarrow.png" onclick="scrollright(3000)"></img>
     <div id="underwater"></div>
-    <!-- <img id="treasurechest" src="images/closedchest.png" onclick="openchest(4700)"></img> -->
     <div id="bubble1"></div>
     <div id="bubble2"></div>
     <div id="bubble3"></div>
     <img id="boat" src="images/boat.png"></img>
     <img id="bag" src="images/bag.png"></img>
-    <img id="floatingbag" src="images/bag.png" onclick="bagtomouse()"></img>
-    <img id="birdthoughtbubble" src="images/birdthoughtbubble.png"></img>
+    <div id="floatingbagmovement"><img id="floatingbag" src="images/bag.png" onclick="bagtomouse()"></img></div>
+    <div id="birdthoughtbubbleopacity"><img id="birdthoughtbubble" src="images/leftthoughtbubble.png"></img></div>
+    <div id="birdwordsopacity"><div id="birdwords"> Hi there! </div></div>
+    <div id="birdnextarrowopacity"><img id="birdnextarrow" src="images/nextarrow.png" onclick="plusBirdSlides()"></img><div>
+    <div id="eggbehind"></div>
+    <div id="eastereggbox">
+        <div id="eastereggtitle"><div id="eastereggtitle"> Easter Eggs </div></div>
+        <div class="eggbox"><img class="talleggobject" id="eggbottle" src="images/bottle.png"></img><img src="images/checkmark.png" id="checkbottle"></img></div>
+        <div class="eggbox"><img class="wideeggobject" id="eggwhale" src="images/whale.png"></img><img class="check" src="images/checkmark.png" id="checkwhale"></img></div>
+        <div class="eggbox"><img class="wideeggobject" id="eggsubwaycar" src="images/subwaycar.png"></img><img class="check" src="images/checkmark.png" id="checksubwaycar"></img></div>
+        <div class="eggbox"><img class="talleggobject" id="eggshrimp" src="images/shrimp.png"></img><img class="check" src="images/checkmark.png" id="checkshrimp"></img></div>
+        <div class="eggbox"><img class="talleggobject" id="eggbag" src="images/bag3.png"></img><img class="check" src="images/checkmark.png" id="checkbag"></img></div>
+        <div class="eggbox"><img class="wideeggobject" id="eggfish" src="images/fish.png"></img><img class="check" src="images/checkmark.png" id="checkfish"></img></div>
+    </div>
+
+
+
+<!-- problems: -->
+    <!-- for some reason setting the birdnextarrowopacity to 0 also chnages the dolphinnextarrowopacity why??? -->
+    <!-- the dolphin will restart the animation when you keep scrolling, how to set the if function as === instead of > -->
 
 
   </body>
