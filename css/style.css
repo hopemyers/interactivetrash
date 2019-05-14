@@ -1,5 +1,5 @@
 body {
-overflow-y: visible;
+overflow-y: hidden;
 overflow-x: visible;
 cursor: auto;
 /* height: 2984px;
@@ -37,6 +37,17 @@ width: 2880px; */
   top: 0px;
   left: 1371px;
   opacity: 0;
+}
+
+#remindershrimp {
+  position: absolute;
+  width: 5%;
+  left: 1600px;
+  top: 2600px;
+}
+
+#reminderthoughtbubble {
+
 }
 
 .left {
@@ -1053,7 +1064,7 @@ width: 2880px; */
 
 @keyframes turtleawayanimate {
   0% {transform: translateX(-650px);}
-  100% {transform: translateX(1050px);}
+  100% {transform: translateX(700px);}
 }
 
 #eatenbag {

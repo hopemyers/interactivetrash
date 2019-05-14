@@ -45,18 +45,26 @@ let dolphinrun = 0;
 let bagsrun = 0;
 let turtlerun = 0;
 let whalerun = 0;
+let eggsfound = 0;
+let remindrun = 0;
+let foundrun = 0;
 
 function myFunction() {
   document.getElementById('depthmeter').innerHTML = "Depth: " + (document.documentElement.scrollTop - 377) + "m";
   document.getElementById('scrolldown').style.opacity = 0;
 
+  if(document.documentElement.scrollTop > 2280 && eggsfound < 6 && remindrun === 0){
+    console.log("find all the eggs!");
+    remindrun = 1;
+  }
+
   if(document.documentElement.scrollTop > 1800 && whalerun === 0) {
-    // document.body.style.overflowY = "hidden";
-    // setTimeout(function(){document.body.style.overflowY = "visible"}, 15000)
+    document.body.style.overflowY = "hidden";
+    setTimeout(function(){document.body.style.overflowY = "visible"}, 15000)
   }
   if(document.documentElement.scrollTop > 1350 && turtlerun ===0){
     // for the turtle animation and thought bubble pop up
-    // document.body.style.overflowY = "hidden";
+    document.body.style.overflowY = "hidden";
 
     document.getElementById('turtle').className = "turtleanimation";
     document.getElementById('turtlethoughtbubble').className = "turtlethoughtbubbleanimation";
@@ -72,7 +80,7 @@ function myFunction() {
     setTimeout(function(){ document.getElementById('turtlewords').style.opacity = 0 }, 14000);
     setTimeout(function(){ document.getElementById('turtlethoughtbubble').style.opacity = 0 }, 14000);
     setTimeout(function(){ document.getElementById('turtle').style.left = "2900px"}, 14000);
-    setTimeout(function(){ document.getElementById('turtle').style.transform.scaleX = -1}, 14500);
+    setTimeout(function(){ document.getElementById('turtle').src = "images/backwardsturtle.png"}, 14500);
     setTimeout(function(){ document.getElementById('turtle').className = "turtleswimaway"}, 14500);
     setTimeout(function(){ document.getElementById('shrimpthoughtbubble').style.opacity = 1 }, 15000);
     setTimeout(function(){ document.getElementById('shrimpwords').style.opacity = 1 }, 15000);
@@ -81,14 +89,14 @@ function myFunction() {
     setTimeout(function(){ document.getElementById('shrimpthoughtbubble').style.opacity = 0 }, 30000);
     setTimeout(function(){ document.getElementById('shrimpwords').style.opacity = 0 }, 30000);
 
-    // setTimeout(function(){ document.body.style.overflowY = "visible"}, 40000);
+    setTimeout(function(){ document.body.style.overflowY = "visible"}, 40000);
     setTimeout(function(){document.getElementById('scrolldown').style.opacity = 1}, 40000);
     turtlerun = 1;
   }
 
 
   if(document.documentElement.scrollTop > 850 && bagsrun === 0){
-    // document.body.style.overflowY = "hidden";
+    document.body.style.overflowY = "hidden";
     document.getElementById('youngbag').className = "youngbaganimation";
     document.getElementById('oldbag').className = "oldbaganimation";
     setTimeout(function(){document.getElementById('youngbagthoughtbubble').style.opacity = 1}, 5000);
@@ -134,7 +142,7 @@ function myFunction() {
     setTimeout(function(){document.getElementById('oldbag').style.left = "2350px"}, 56000);
     setTimeout(function(){document.getElementById('oldbag').style.top = "1180px"}, 56000);
     setTimeout(function(){document.getElementById('oldbag').className = "oldbagswimawayanimation"}, 56000);
-    // setTimeout(function(){document.body.style.overflowY = "visible"}, 66000);
+    setTimeout(function(){document.body.style.overflowY = "visible"}, 66000);
     setTimeout(function(){document.getElementById('scrolldown').style.opacity = 1;}, 66000);
     bagsrun = 1;
   }
@@ -151,7 +159,7 @@ function myFunction() {
   if(document.documentElement.scrollTop > 370 && dolphinrun === 0){
     console.log("HEY");
     // for the dolphin animation and thought bubble pop up
-    // document.body.style.overflowY = "hidden";
+    document.body.style.overflowY = "hidden";
     document.getElementById('narratorshrimpspeechbubble').style.opacity = 1;
     document.getElementById('narratorshrimpwords').style.opacity = 1;
     document.getElementById('narratorshrimp').style.opacity = 1;
@@ -182,7 +190,7 @@ function myFunction() {
     setTimeout(function(){document.getElementById('narratorshrimpwords').style.opacity = 0}, 52000);
     setTimeout(function(){document.getElementById('narratorshrimpspeechbubble').style.opacity = 0}, 52000);
 
-    // setTimeout(function(){document.body.style.overflowY = "visible"}, 70000);
+    setTimeout(function(){document.body.style.overflowY = "visible"}, 70000);
     setTimeout(function(){document.getElementById('scrolldown').style.opacity = 1;}, 70000);
 
     dolphinrun = 1;
@@ -196,7 +204,18 @@ function myFunction() {
     document.getElementById('eastereggbox').style.opacity = 0;
     document.getElementById('eggbehind').style.opacity = 0;
     document.getElementById('bagcheck').style.opacity = 0;
+    document.getElementById('fishcheck').style.opacity = 0;
+    document.getElementById('bottlecheck').style.opacity = 0;
+    document.getElementById('shrimpcheck').style.opacity = 0;
+    document.getElementById('whalecheck').style.opacity = 0;
+    document.getElementById('subwaycarcheck').style.opacity = 0;
   }
+
+  if(eggsfound === 6 && foundrun === 0){
+    console.log("you found all the eggs!")
+    foundrun = 1;
+  }
+
 }
 
 // seagull speaking
@@ -216,7 +235,9 @@ function plusBirdSlides()  {
   }
 }
 
-var eggsfound = 0;
+window.addEventListener(eggsfound === 6)
+
+
 
 function whalefact() {
   document.getElementById('whale').className = "whaleanimation";
