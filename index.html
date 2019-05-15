@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Interactive Trash</title>
+    <title>Trashley's Journey</title>
     <script src="js/p5/p5.min.js"></script>
     <script src="js/p5/addons/p5.dom.min.js"></script>
     <script src="js/p5/addons/p5.sound.min.js"></script>
     <script src="js/sketch.js"></script>
     <script src="js/script.js"></script>
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rasa" rel="stylesheet">
   </head>
 
   <body id="thebody" onmousemove="checkeggs()">
@@ -86,13 +87,13 @@
     <img id="scrolldown" src="images/arrow.png"></img>
     <img id="narratorshrimp" src="images/leftshrimp.png"></img>
     <img id="narratorshrimpspeechbubble" src="images/leftthoughtbubble.png"></img>
-    <div id="narratorshrimpwords"> Welcome to the ocean!</div>
+    <div id="narratorshrimpwords"> Welcome to the New York Harbor!</div>
     <img id="fishfish" src="images/fish.png" onclick="fishfact()"></img>
     <img id="bottle" src="images/bottle.png" onclick="bottlefact()"></img>
     <img id="specialbag" src="images/bag3.png" onclick="bagfact()"></img>
     <img id="remindershrimp" src="images/shrimp.png"></img>
     <img id="reminderthoughtbubble" src="images/rightthoughtbubble.png"></img>
-    <div id="remindershrimpwords">Don't forget to find all the easter eggs! You can go back up to find the rest.</div>
+    <div id="remindershrimpwords">Don't forget to find all the easter eggs! You can go back up if you missed any.</div>
 
 
 <!-- Things that are on top of the water -->
@@ -102,7 +103,7 @@
     <img id="bag" src="images/bag.png"></img>
     <div id="floatingbagopacity"><div id="floatingbagmovement"><img id="floatingbag" src="images/bag.png" onclick="bagtomouse()"></img></div></div>
     <div id="birdthoughtbubbleopacity"><img id="birdthoughtbubble" src="images/leftthoughtbubble.png"></img></div>
-    <div id="birdwordsopacity"><div id="birdwords"> Hi there! </div></div>
+    <div id="birdwordsopacity"><div id="birdwords"> Hi there friends! </div></div>
     <div id="birdnextarrowopacity"><img id="birdnextarrow" src="images/nextarrow.png" onclick="plusBirdSlides()"></img></div>
     <div id="eggbehind"></div>
     <div id="eastereggbox">
@@ -121,6 +122,7 @@
     <img id="whalecheck" src="images/checkmark.png"></img>
     <img id="subwaycarcheck" src="images/checkmark.png"></img>
     <div id="title"> Trashley's Journey </div>
+    <div id="credits" onclick="credits()"> Credits </div>
 
 
 

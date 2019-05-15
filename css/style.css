@@ -1,7 +1,8 @@
 body {
 overflow-y: hidden;
-overflow-x: visible;
+overflow-x: hidden;
 cursor: auto;
+font-family: 'Rasa', serif;
 /* height: 2984px;
 width: 2880px; */
 }
@@ -17,6 +18,19 @@ width: 2880px; */
   top: 500px;
   left: 300px;
   color: #D8D8D8;
+}
+
+#credits {
+  position: absolute;
+  font-size: 150%;
+  top: 2950px;
+  left: 1470px;
+  color: #D8D8D8;
+  opacity: .8;
+}
+
+#credits:hover {
+  cursor: pointer;
 }
 
 #depthmeter {
@@ -66,13 +80,13 @@ width: 2880px; */
 #remindershrimpwords {
   position: absolute;
   top: 2455px;
-  left: 1645px;
+  left: 1650px;
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  height: 105px;
-  width: 205px;
-  font-size: 150%;
+  height: 100px;
+  width: 195px;
+  font-size: 145%;
   opacity: 0;
 }
 
@@ -175,11 +189,11 @@ width: 2880px; */
 }
 
 #underwater {
-  width: 1445px;
+  width: 1440px;
   height: 2600px;
   position: absolute;
   top: 400px;
-  left: 1435px;
+  left: 1440px;
   /* background-color: lightblue; */
   background-image: linear-gradient(#57E9FF, #000);
   opacity: .3;
@@ -209,6 +223,11 @@ width: 2880px; */
   left: 1700px;
   z-index: 1;
 }
+
+#floatingbagmovement:hover {
+  cursor: pointer;
+}
+
 #floatingbag {
   /* position: absolute; */
   width: 66px;
@@ -238,12 +257,12 @@ width: 2880px; */
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  height: 105px;
-  width: 205px;
+  height: 100px;
+  width: 195px;
   font-size: 150%;
   position: absolute;
-  top: 480px;
-  left: 2480px;
+  top: 482.5px;
+  left: 2485px;
   opacity: 0;
 }
 
@@ -416,7 +435,7 @@ width: 2880px; */
   top: 500px;
   opacity: .5;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-name: bgfish1;
 }
@@ -430,10 +449,10 @@ width: 2880px; */
   position: absolute;
   width: 18%;
   left: 1300px;
-  top: 700px;
+  top: 720px;
   opacity: .3;
   animation-iteration-count: infinite;
-  animation-duration: 19s;
+  animation-duration: 37s;
   animation-timing-function: linear;
   animation-name: bgfish2;
 }
@@ -450,7 +469,7 @@ width: 2880px; */
   top: 1000px;
   opacity: .35;
   animation-iteration-count: infinite;
-  animation-duration: 11s;
+  animation-duration: 23s;
   animation-timing-function: linear;
   animation-name: bgfish3;
 }
@@ -467,7 +486,7 @@ width: 2880px; */
   top: 1200px;
   opacity: .6;
   animation-iteration-count: infinite;
-    animation-duration: 13s;
+    animation-duration: 34s;
     animation-timing-function: linear;
     animation-name: bgfish4;
 }
@@ -484,7 +503,7 @@ width: 2880px; */
   top: 1400px;
   opacity: .3;
   animation-iteration-count: infinite;
-  animation-duration: 20s;
+  animation-duration: 27s;
   animation-timing-function: linear;
   animation-name: bgfish5;
 }
@@ -501,7 +520,7 @@ width: 2880px; */
   top: 1700px;
   opacity: .4;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
+  animation-duration: 35s;
   animation-timing-function: linear;
   animation-name: bgfish6;
 }
@@ -518,7 +537,7 @@ width: 2880px; */
   top: 1900px;
   opacity: .3;
   animation-iteration-count: infinite;
-  animation-duration: 20s;
+  animation-duration: 28s;
   animation-timing-function: linear;
   animation-name: bgfish7;
 }
@@ -535,7 +554,7 @@ width: 2880px; */
   top: 2150px;
   opacity: .4;
   animation-iteration-count: infinite;
-  animation-duration: 25s;
+  animation-duration: 34s;
   animation-timing-function: linear;
   animation-name: bgfish8;
 }
@@ -552,7 +571,7 @@ width: 2880px; */
   top: 2400px;
   opacity: .2;
   animation-iteration-count: infinite;
-  animation-duration: 35s;
+  animation-duration: 24s;
   animation-timing-function: linear;
   animation-name: bgfish9;
 }
@@ -569,7 +588,7 @@ width: 2880px; */
   top: 2600px;
   opacity: .3;
   animation-iteration-count: infinite;
-  animation-duration: 35s;
+  animation-duration: 36s;
   animation-timing-function: linear;
   animation-name: bgfish10;
 }
@@ -747,12 +766,12 @@ width: 2880px; */
   border-width: 1px;
   border-color: black; */
   height: 105px;
-  width: 205px;
-  font-size: 150%;
+  width: 200px;
+  font-size: 140%;
   /* top: 160px;
   left: 2255px; */
   top: 100px;
-  left: 2220px;
+  left: 2225px;
   opacity: 0;
 }
 
@@ -769,24 +788,24 @@ width: 2880px; */
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  height: 105px;
-  width: 205px;
+  height: 100px;
+  width: 195px;
   font-size: 150%;
   position: absolute;
-  top: 725px;
-  left: 1954px;
+  top: 727.5px;
+  left: 1959px;
   opacity: 0;
 }
 
 #turtlewords {
   position: absolute;
-  top: 1555px;
-  left: 2605px;
+  top: 1557.5px;
+  left: 2610px;
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  height: 105px;
-  width: 205px;
+  height: 100px;
+  width: 195px;
   font-size: 150%;
   opacity: 0;
 }
@@ -796,10 +815,10 @@ width: 2880px; */
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  height: 105px;
-  width: 205px;
+  height: 100px;
+  width: 195px;
   font-size: 150%;
-  top: 1465px;
+  top: 1467.5px;
   left: 1708px;
   opacity: 0;
 }
@@ -817,11 +836,11 @@ width: 2880px; */
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  height: 105px;
-  width: 205px;
+  height: 100px;
+  width: 195px;
   font-size: 150%;
-  top: 1055px;
-  left: 1850px;
+  top: 1057.5px;
+  left: 1840px;
   opacity: 0;
 }
 
@@ -838,11 +857,11 @@ width: 2880px; */
   /* border-style: solid;
   border-width: 1px;
   border-color: black; */
-  height: 105px;
-  width: 205px;
+  height: 100px;
+  width: 195px;
   font-size: 150%;
-  top: 1035px;
-  left: 2133px;
+  top: 1037.5px;
+  left: 2138px;
   opacity: 0;
 }
 
@@ -1005,7 +1024,7 @@ width: 2880px; */
 
 .seagullspinanimation {
   animation-name: seagullspinanimate;
-  animation-delay: 11s;
+  animation-delay: 9s;
   animation-duration: 6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -1019,9 +1038,9 @@ width: 2880px; */
 
 .seagullanimation {
   animation-name: seagullanimate;
-  animation-delay: 11s;
+  animation-delay: 9s;
   animation-duration: 1s;
-  animation-iteration-count: 5;
+  animation-iteration-count: 6;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
@@ -1033,7 +1052,7 @@ width: 2880px; */
 
 .birdthoughtbubbleanimation {
   animation-name: birdthoughtbubbleanimate;
-  animation-delay: 17s;
+  animation-delay: 15s;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -1050,7 +1069,7 @@ width: 2880px; */
 
 .birdwordsanimation {
   animation-name: birdwordsanimate;
-  animation-delay: 17s;
+  animation-delay: 15s;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -1067,7 +1086,7 @@ width: 2880px; */
 
 .birdnextarrowanimation {
   animation-name: birdnextarrowanimate;
-  animation-delay: 17s;
+  animation-delay: 15s;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -1395,6 +1414,10 @@ width: 2880px; */
   animation-direction: alternate;
 }
 
+#rightarrow:hover {
+  cursor: pointer;
+}
+
 #downarrow {
   position: absolute;
   width: 10%;
@@ -1476,4 +1499,50 @@ width: 2880px; */
   100% {
     transform: translateY(15px);
   };
+}
+
+
+/* css for credits.html */
+
+
+#creditsbody {
+  height: 100%;
+  background-image: linear-gradient(lightblue, blue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Rasa', serif;
+}
+
+#creditstitle {
+  font-size: 300%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#creditslist {
+  margin-left: 5%;
+  margin-top: 3%;
+  font-size: 107%;
+}
+
+#creditcenter {
+  text-align: center;
+  margin-left: -5%;
+  font-size: 150%;
+}
+
+#playagain {
+  position: absolute;
+  top: 3%;
+  left: 1.5%;
+  font-size: 150%;
+  width: 8%;
+  height: 4%;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#playagain:hover {
+  cursor: pointer;
 }
