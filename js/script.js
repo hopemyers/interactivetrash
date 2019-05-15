@@ -181,7 +181,7 @@ function myFunction() {
     document.getElementById('narratorshrimp').style.opacity = 1;
 
     setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "See the things in the box? Those are called easter eggs."}, 3000);
-    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "They're' all somewhere in the New York Harbor,"}, 7000);
+    setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "They're all somewhere in the New York Harbor,"}, 7000);
     setTimeout(function(){document.getElementById('narratorshrimpwords').innerHTML = "can you help me find them all?"}, 11000);
     setTimeout(function(){document.getElementById('narratorshrimpwords').style.opacity = 0}, 15000);
     setTimeout(function(){document.getElementById('narratorshrimpspeechbubble').style.opacity = 0}, 15000);
@@ -235,51 +235,51 @@ function myFunction() {
 function checkeggs() {
   if(eggsfound === 6 && foundrun === 0){
     console.log("you found all the eggs!")
-    setTimeout(function(){document.getElementById('eggpopup').style.opacity = 1;}, 15000);
-    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Yay! You’ve found all the easter eggs!"}, 15000);
-    setTimeout(function(){document.getElementById('eggpopupwords').style.opacity = 1}, 18000);
-    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "When you use less plastic and recycle, you can help prevent 14 billion pounds of plastic from entering the ocean!"}, 23000);
-    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Start now by clicking on the piles of trash to help clean the bottom of the ocean"}, 30000);
-    setTimeout(function(){document.getElementById('trashpile1').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile2').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile3').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile4').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile5').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile6').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile7').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile8').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile9').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile10').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile11').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile12').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile13').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile14').style.zIndex = "2";}, 30000);
-    setTimeout(function(){document.getElementById('trashpile1').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile2').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile3').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile4').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile5').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile6').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile7').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile8').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile9').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile10').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile11').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile12').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile13').style.opacity = .4;}, 30000);
-    setTimeout(function(){document.getElementById('trashpile14').style.opacity = .4;}, 30000);
+    setTimeout(function(){document.getElementById('eggpopup').style.opacity = 1;}, 9000);
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Yay! You’ve found all the easter eggs!"}, 9000);
+    setTimeout(function(){document.getElementById('eggpopupwords').style.opacity = 1}, 12000);
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "When you use less plastic and recycle, you can help prevent 14 billion pounds of plastic from entering the ocean!"}, 17000);
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Start now by clicking on the piles of trash to help clean the bottom of the ocean"}, 24000);
+    setTimeout(function(){document.getElementById('trashpile1').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile2').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile3').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile4').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile5').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile6').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile7').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile8').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile9').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile10').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile11').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile12').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile13').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile14').style.zIndex = "2";}, 24000);
+    setTimeout(function(){document.getElementById('trashpile1').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile2').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile3').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile4').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile5').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile6').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile7').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile8').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile9').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile10').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile11').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile12').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile13').style.opacity = .4;}, 24000);
+    setTimeout(function(){document.getElementById('trashpile14').style.opacity = .4;}, 24000);
     // make popup bubble bigger
-    setTimeout(function(){document.getElementById('eggpopup').style.width = "500px"}, 36000);
-    setTimeout(function(){document.getElementById('eggpopup').style.height = "500px"}, 36000);
-    setTimeout(function(){document.getElementById('eggpopup').style.top = "106px"}, 36000);
-    setTimeout(function(){document.getElementById('eggpopup').style.left = "470px"}, 36000);
+    setTimeout(function(){document.getElementById('eggpopup').style.width = "500px"}, 30000);
+    setTimeout(function(){document.getElementById('eggpopup').style.height = "500px"}, 30000);
+    setTimeout(function(){document.getElementById('eggpopup').style.top = "106px"}, 30000);
+    setTimeout(function(){document.getElementById('eggpopup').style.left = "470px"}, 30000);
 
-    setTimeout(function(){document.getElementById('eggpopupwords').style.fontSize = "150%"}, 36000);
+    setTimeout(function(){document.getElementById('eggpopupwords').style.fontSize = "150%"}, 30000);
     setTimeout(function(){document.getElementById('eggpopupwords').innerHTML =
     "<p> Here's what you can do: </p> <li>Make sure you separate your trash in the correct recycling bins!</li> <li>Carry a reusable water bottle and refill at the fountain!</li> <li>In the summer, go for an ice cream cone! Ditch the cup!</li>"
-    }, 36000)
-    setTimeout(function(){document.getElementById('eggpopupwords').style.fontSize = "150%"}, 36000)
-    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "Head on over to <a href='https://www.wcs.org'> WCS.org </a> to learn more!"}, 56000);
+    }, 30000)
+    setTimeout(function(){document.getElementById('eggpopupwords').style.fontSize = "150%"}, 30000)
+    setTimeout(function(){document.getElementById('eggpopupwords').innerHTML = "<p id='theend'> The End </p> <br> <p>Head on over to <a href='https://www.wcs.org'> WCS.org </a> to learn more! </p>"}, 50000);
     // setTimeout(function(){document.getElementById('eggpopupwords').style.opacity = 0;}, 45000);
     // setTimeout(function(){document.getElementById('eggpopup').style.opacity = 0}, 45000);
 
@@ -317,7 +317,7 @@ function whalefact() {
   document.getElementById('bubble').play();
   document.getElementById('bubble').loop = false;
   document.getElementById('whale').className = "whaleanimation";
-  document.getElementById('eggpopupwords').innerHTML = "Whales feel sick because you can find hosepipes, plastic pots and disposable bags in their stomachs";
+  document.getElementById('eggpopupwords').innerHTML = "Sometimes whales feel sick because they have hosepipes, plastic pots and disposable bags, and other trash in their stomachs";
   document.getElementById('eggpopup').style.opacity = .8;
   document.getElementById('eggpopupwords').style.opacity = 1;
   document.getElementById('eggwhale').style.opacity = 1;

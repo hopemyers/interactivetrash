@@ -20,6 +20,10 @@ width: 2880px; */
   color: #D8D8D8;
 }
 
+#theend {
+  font-size: 200%;
+}
+
 #credits {
   position: absolute;
   font-size: 150%;
@@ -1528,7 +1532,7 @@ width: 2880px; */
 #creditcenter {
   text-align: center;
   margin-left: -5%;
-  font-size: 150%;
+  font-size: 130%;
 }
 
 #playagain {
